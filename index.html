@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Samuel Salas">
-    <link rel="stylesheet" href="style.css">
     <title>Momento 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Tienda Virtual - Actividad Momento 2</h1>
+    </header>
+
+    <section class="busqueda-container">
+        <input id="inputBusqueda" type="text" placeholder="Buscar producto por nombre...">
+        <select id="selectCategoria">
+            <option value="">Todas las categorías</option>
+            <option value="Tecnología">Tecnología</option>
+            <option value="Ropa">Ropa</option>
+            <option value="Hogar">Hogar</option>
+        </select>
+        <button id="btnBuscar">Buscar</button>
+    </section>
+
+    <main>
+        <div id="contenedorProductos" class="grid-productos"></div>
+    </main>
+
     <script src="app.js"></script>
+
 </body>
 </html>
